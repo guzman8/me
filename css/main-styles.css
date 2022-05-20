@@ -6,27 +6,29 @@ body {
     color: #787878
 }
 
- 
- 
+
+
 
 section#who_we_are {
     padding: 3em 3em 5px 3em;
     background-color: rgba(242, 242, 242, 255);
 }
-section#services{
+
+section#services {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 15px;
     background-color: white;
 
 }
+
 section#portfolio {
     background-color: rgba(242, 242, 242, 255);
     padding-top: 30px;
-padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-section#Location{
+section#Location {
     background-color: white;
     text-align: center;
 }
@@ -58,7 +60,8 @@ article {
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
-    width: 47%; /* It should be 50% */
+    width: 47%;
+    /* It should be 50% */
     padding: 10px;
 }
 
@@ -86,88 +89,115 @@ article {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 /*Service*/
 
 
-.contenido{
+.contenido {
 
-   
+
     margin-left: auto;
     margin-right: auto;
-      width: 100%;
-  }
-  .titleService {
-  
+    width: 100%;
+}
+
+.titleService {
+
     font-size: 1.5em;
     margin: 0px;
-   
-  }
-  .servicegrup{
-  
-      display: inline-block;
-      width: 32%;
-      margin-right: 10px;
-     
-  }
-  .titleservices{
-  
-      text-align: center;
-      padding-bottom: 50px;
-  }
-  .service{
+
+}
+
+.servicegrup {
+
+    display: inline-block;
+    width: 32%;
+    margin-right: 10px;
+
+}
+
+.titleservices {
+
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.service {
     font-size: 0.9em;
     text-align: justify;
     color: rgb(133, 133, 134);
-  }
-   
-  .conjunto{
-      width: 100%;
-  }
-    .elemento1{
-  float: left;
-  width: 20%;
-   
 }
-.elemento2{
+
+.conjunto {
+    width: 100%;
+}
+
+.elemento1 {
+    float: left;
+    width: 20%;
+
+}
+
+.elemento2 {
     width: 75%;
     float: right;
-    
+
 
 }
-.iconoservice{
 
-    border-radius:80px;
-    border-width:medium;
+.iconoservice {
+
+    border-radius: 80px;
+    border-width: medium;
     padding: 10px;
     border-color: rgba(223, 216, 216, 0.719);
     border-style: solid;
     width: 40px;
 
 }
-.servicetotal{
+
+.servicetotal {
     width: 95%;
-    
+
 
 }
 
 /*Style portfolio*/
 
 
-div#portfolio_div {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+div#portfolio div img {
+    width: 240px;
+    height: 160px;
+    margin-bottom: 15px;
 }
 
+div#portfolio div#grid div div{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div#grid{
+    margin-top: 20px;
+}
+/*
+div#image2 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position:absolute;
+} */
+/*
 table#images tr td img {
     width: 300px;
     height: 200px;
-}
+} 
 
 table#images {
     border-spacing: 5px 20px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 img.rotation {
     transition-duration: 1s;
@@ -178,7 +208,8 @@ img.rotation:hover {
 }
 
 img.spin {
-    transition-duration: 1s;}
+    transition-duration: 1s;
+}
 
 img.spin:hover {
     transform: rotate(360deg);
@@ -186,6 +217,13 @@ img.spin:hover {
     height: 200px;
     border-radius: 150px / 100px;
 }
+
+/*
+.form-group {
+    margin-bottom: 15px;
+
+}
+*/
 
 /*Location*/
 
@@ -195,13 +233,13 @@ img.spin:hover {
     margin: auto;
 }*/
 
-main section#Location div{
+main section#Location div {
     list-style: none;
     position: relative;
     display: inline-block;
 }
 
-main section#Location div#mapa{  
+main section#Location div#mapa {
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -209,13 +247,13 @@ main section#Location div#mapa{
     border: 2px solid black;
 }
 
-section#Location div div#info div.parrafo_info{
+section#Location div div#info div.parrafo_info {
     text-align: justify;
     padding: 10px;
     display: block;
 }
 
-section#Location{
+section#Location {
     border: 20px solid white;
     padding-bottom: 70px;
 }
@@ -225,18 +263,18 @@ section#Location{
 
 .backgroundmapa {
     padding: 2em;
-    color:white;
+    color: white;
     background-image: url("../img/map-image.png");
     background-blend-mode: normal;
     background-color: #79629e;
     background-position: center;
     background-repeat: no-repeat;
 }
- 
+
 .box1form {
-    color:white;
+    color: white;
     width: 100%;
-    
+
 }
 
 input {
@@ -250,7 +288,7 @@ input {
 .form_send_button {
     width: 100px;
 }
- 
+
 textarea {
     left: 500px;
     height: 75px;
