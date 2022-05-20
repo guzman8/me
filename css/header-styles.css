@@ -1,0 +1,44 @@
+.title {
+    margin: 0;
+    padding: 0.4em 1em;
+    color: white;
+    background-image: url("../img/header.jpg");
+    background-size: 100% 150%;
+    background-position: left center;
+    line-height: 250px;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #61458c;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold;
+    margin: 0.5em 1em 0.5em 1em;
+    padding: 0.7em;
+    border-radius: 5%;
+    text-decoration: none; /* Removes anchor decorations */
+    color: white;
+    white-space: nowrap; /* Avoids line feed of blank spaces when stretching */
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #61458c;
+}

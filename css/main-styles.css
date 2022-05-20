@@ -1,0 +1,275 @@
+html,
+body {
+    margin: 0;
+    max-width: 1024px;
+    font-family: "Open Sans", sans-serif;
+    color: #787878
+}
+
+ 
+ 
+
+section#who_we_are {
+    padding: 3em 3em 5px 3em;
+    background-color: rgba(242, 242, 242, 255);
+}
+section#services{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    background-color: white;
+
+}
+section#portfolio {
+    background-color: rgba(242, 242, 242, 255);
+    padding-top: 30px;
+padding-bottom: 30px;
+}
+
+section#Location{
+    background-color: white;
+    text-align: center;
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+    color: #4e4e4e
+}
+
+section h2 {
+    margin: 0 0 1em 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+article {
+    text-align: justify;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 47%; /* It should be 50% */
+    padding: 10px;
+}
+
+.column:nth-child(odd) {
+    border-right: 1px solid #d3d3d3;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin: 2em 0 0 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.float_left {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/*Service*/
+
+
+.contenido{
+
+   
+    margin-left: auto;
+    margin-right: auto;
+      width: 100%;
+  }
+  .titleService {
+  
+    font-size: 1.5em;
+    margin: 0px;
+   
+  }
+  .servicegrup{
+  
+      display: inline-block;
+      width: 32%;
+      margin-right: 10px;
+     
+  }
+  .titleservices{
+  
+      text-align: center;
+      padding-bottom: 50px;
+  }
+  .service{
+    font-size: 0.9em;
+    text-align: justify;
+    color: rgb(133, 133, 134);
+  }
+   
+  .conjunto{
+      width: 100%;
+  }
+    .elemento1{
+  float: left;
+  width: 20%;
+   
+}
+.elemento2{
+    width: 75%;
+    float: right;
+    
+
+}
+.iconoservice{
+
+    border-radius:80px;
+    border-width:medium;
+    padding: 10px;
+    border-color: rgba(223, 216, 216, 0.719);
+    border-style: solid;
+    width: 40px;
+
+}
+.servicetotal{
+    width: 95%;
+    
+
+}
+
+/*Style portfolio*/
+
+
+div#portfolio_div {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table#images tr td img {
+    width: 300px;
+    height: 200px;
+}
+
+table#images {
+    border-spacing: 5px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.rotation {
+    transition-duration: 1s;
+}
+
+img.rotation:hover {
+    transform: rotate(-20deg)
+}
+
+img.spin {
+    transition-duration: 1s;}
+
+img.spin:hover {
+    transform: rotate(360deg);
+    width: 300px;
+    height: 200px;
+    border-radius: 150px / 100px;
+}
+
+/*Location*/
+
+
+
+/*section#Location h1{
+    margin: auto;
+}*/
+
+main section#Location div{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+main section#Location div#mapa{  
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+section#Location div div#info div.parrafo_info{
+    text-align: justify;
+    padding: 10px;
+    display: block;
+}
+
+section#Location{
+    border: 20px solid white;
+    padding-bottom: 70px;
+}
+
+
+/* Email us */
+
+.backgroundmapa {
+    padding: 2em;
+    color:white;
+    background-image: url("../img/map-image.png");
+    background-blend-mode: normal;
+    background-color: #79629e;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.box1form {
+    color:white;
+    width: 100%;
+    
+}
+
+input {
+    left: 500px;
+    border-radius: 5px;
+    border-width: 0;
+    height: 25px;
+    width: 250px;
+}
+
+.form_send_button {
+    width: 100px;
+}
+ 
+textarea {
+    left: 500px;
+    height: 75px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#h2form {
+    text-align: center;
+    padding-left: 0em;
+    color: white;
+}
+
+.form_table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_table td {
+    padding: 5px;
+    vertical-align: top;
+}
