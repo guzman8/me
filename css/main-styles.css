@@ -311,3 +311,12 @@ textarea {
     padding: 5px;
     vertical-align: top;
 }
+
+#email_us input{
+    margin: 2 px;
+} 
+
+#email_us label{
+    margin: 2px;
+    text-align: right;
+}
