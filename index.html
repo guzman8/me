@@ -54,7 +54,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <img src="img/fondo.jpeg" height="200px" width="100%" alt="bonito paisaje">
 </section>
   <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="#"><img src="img/Montse.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>Psicologia Barcelona</b></h1>
@@ -252,7 +252,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
+    <form class="contact_form" action="#" target="_blank">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -265,10 +265,42 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+      <button id="myBtn" type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
     </form>
   </div>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    const form = document.querySelector('.contact_form');
+    function sendMsg(e){
+      console.log("here we go")
+      e.preventDefault();
+      const name = document.querySelector('[name="Name"]'),
+            email = document.querySelector('[name="Email"]'),
+            msg = document.querySelector('[name="Message"]');
+      //function send mail
+
+      //635DD077B5B473F19DE88E6D521B01298A8B
+      // token 60b0f47a-3c6d-47a3-b2dc-97e48f6481b4
+
+      Email.send({
+          SecureToken : "60b0f47a-3c6d-47a3-b2dc-97e48f6481b4",
+          To : 'guzmangalofre@gmail.com',
+          From : email.value,
+          Subject : "Contact form",
+          Body : msg.value
+      }).then(
+        message => alert(message)
+      );
+      console.log("done")
+    }
+    form.addEventListener('submit', sendMsg);
+
+
+
+  </script>
+  
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
